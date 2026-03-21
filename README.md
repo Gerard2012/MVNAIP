@@ -7,4 +7,4 @@ Build a unified automation system that:
 - Correlates, normalizes, and visualizes the data
 - Automates a network workflow (e.g., provisioning, policy enforcement, compliance check)
 - Uses webhooks/events for reactive automation
-- Follows DevOps/dev‑best practices expected in DEVCOR
+- Follows DevOps/dev‑best practices expected in AUTOCOR

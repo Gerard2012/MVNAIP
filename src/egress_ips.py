@@ -40,6 +40,22 @@ class EgressIP:
     # User-friendly string representation used in log messages
     def __str__(self):
         return f"EgressIP()"
+    
+    # Context manager entry point
+    def __enter__(self):
+        return self
+
+    # Context manager exit point
+    def __exit__(self, exc_type, exc_value, traceback):
+        # Cleanup logic
+        self.api_key = None
+ 
+        if exc_type:
+            logger.error(
+                f"{self} - Exception occurred: {exc_type.__name__} - {exc_value}"
+            )
+        else:
+            logger.debug(f"{self} - Exited Cleanly")
 
     def _handle_response(self, response):
 

@@ -137,19 +137,4 @@ class EgressIP:
 
 if __name__ == "__main__":
 
-    logging.basicConfig(
-        filename=f"{(__file__)}.log",
-        level=logging.INFO,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    )
-
-    row_url = "https://api.prod6.datapath.prismaaccess.com/getPrismaAccessIP/v2"
-    china_url = "https://api.prod.datapath.prismaaccess.cn/getPrismaAccessIP/v2"
-    row_api_key = "wouwp7fvfe__gMOrWZ8a4i9dAEomolCCH63CYPRSXswS3XDIuLxr"
-    china_api_key = "njoy5xucu6__RtyNSnJ8C57EBCY6azlHC5nNWBnz4wMo24B7HpWW"
-
-    egress_ip_client = EgressIP(row_url, row_api_key)
-    egress_ips = egress_ip_client.print_egress_ips()
-
-    egress_ip_client = EgressIP(china_url, china_api_key)
-    egress_ips = egress_ip_client.print_egress_ips()
+    pass

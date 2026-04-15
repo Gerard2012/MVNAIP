@@ -1533,22 +1533,4 @@ class PrismaSDWANAPIClient(BaseAPIClient):
 
 if __name__ == "__main__":
 
-    logging.basicConfig(
-        filename=f"{(__file__)}.log",
-        level=logging.INFO,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    )
-
-    creds = {
-        "client_id": "api-gmg@1260436360.iam.panserviceaccount.com",
-        "secret": "ce026b8a-96f3-469a-986d-49d7fd461dd8",
-    }
-
-    with PrismaSDWANAPIClient(
-        "api-gmg@1260436360.iam.panserviceaccount.com",
-        "ce026b8a-96f3-469a-986d-49d7fd461dd8",
-    ) as x:
-
-        print(
-            json.dumps(x.get_element_status("1773411935073007638"), indent=2)
-        )
+    pass
